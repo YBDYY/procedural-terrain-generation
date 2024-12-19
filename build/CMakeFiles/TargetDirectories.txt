@@ -1,0 +1,3 @@
+/home/deividas/PTG/build/CMakeFiles/ProceduralTerrain.dir
+/home/deividas/PTG/build/CMakeFiles/edit_cache.dir
+/home/deividas/PTG/build/CMakeFiles/rebuild_cache.dir
