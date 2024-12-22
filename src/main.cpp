@@ -2,13 +2,11 @@
 #include "../libs/FastNoiseLite.h"
 #include <vector>
 #include <cmath>
-#include "cameramovement.h"
 
-const int screenWidth = 800;
-const int screenHeight = 600;
+const int screenWidth = 1920;
+const int screenHeight = 1080;
 const int terrainWidth = 100;
 const int terrainHeight = 100;
-
 
 const float noiseScale = 0.2f;
 const float noiseFrequency = 0.1f;
@@ -22,12 +20,10 @@ std::vector<float> GenerateHeightMap(int width, int height) {
     noise.SetFrequency(noiseFrequency);
     noise.SetFractalOctaves(noiseOctaves);
 
-    
-    noise.SetSeed(GetTime());  
+    noise.SetSeed(GetTime());
 
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
-            
             float noiseValue = noise.GetNoise(x * noiseScale, y * noiseScale);
             heightMap[y * width + x] = noiseValue;
         }
@@ -41,23 +37,10 @@ void DrawTerrain(const std::vector<float>& heightMap, int width, int height) {
         for (int x = 0; x < width; ++x) {
             float heightValue = heightMap[y * width + x];
 
-           
-            float brightness = (heightValue + 1.0f) / 2.0f; // Normalize to [0, 1]
-            
-            
-            Color baseColor = GREEN;
+            Vector3 position = { (float)x, heightValue * 10.0f, (float)y };  // 3D position
+            Color color = (heightValue < -0.1f) ? BLUE : (heightValue < 0.3f) ? GREEN : (heightValue < 0.7f) ? DARKGREEN : BROWN;
 
-            
-            Color color = ColorAlpha(baseColor, brightness);
-
-            // Customize color ranges based on height
-            if (heightValue < -0.1f) color = BLUE;         // Water
-            else if (heightValue < 0.3f) color = GREEN;    // Plains
-            else if (heightValue < 0.7f) color = DARKGREEN; // Hills
-            else color = BROWN;                            // Mountains
-
-            // Draw the pixel
-            DrawPixel(x, y, color);
+            DrawCube(position, 1.0f, 1.0f, 1.0f, color);  // Draw a cube at each terrain point
         }
     }
 }
@@ -65,20 +48,31 @@ void DrawTerrain(const std::vector<float>& heightMap, int width, int height) {
 int main() {
     InitWindow(screenWidth, screenHeight, "Procedural Terrain Generation");
 
-   Camera2D Camera = {0};
-   InitializeCamera(Camera,screenWidth,screenHeight);
+    // 3D camera setup
+    Camera3D camera = {0};
+    camera.position = { 10.0f, 10.0f, 10.0f };  // Position behind the terrain
+    camera.target = { 0.0f, 0.0f, 0.0f };     // Look at the origin
+    camera.up = { 0.0f, 1.0f, 0.0f };         // Y-axis is up
+    camera.fovy = 45.0f;                      // Field of view
+    camera.projection = CAMERA_PERSPECTIVE;          // Perspective camera
 
-    std::vector<float> heightMap = GenerateHeightMap(screenWidth, screenHeight);
+    std::vector<float> heightMap = GenerateHeightMap(terrainWidth, terrainHeight);
+
+    SetTargetFPS(60);  // Set frame rate
 
     while (!WindowShouldClose()) {
-        UpdateCamera(Camera);
+        // Update the camera (this will make it follow keyboard and mouse input)
+        UpdateCamera(&camera, CAMERA_FREE);
+
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
-        BeginMode2D(Camera);
-        DrawTerrain(heightMap, screenWidth, screenHeight);
-        EndMode2D();
+        BeginMode3D(camera);
 
+        // Draw the terrain in 3D
+        DrawTerrain(heightMap, terrainWidth, terrainHeight);
+
+        EndMode3D();
 
         EndDrawing();
     }
