@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/deividas/PTG/libs/imgui
+CXX_INCLUDES = -I/home/deividas/PTG/libs -I/home/deividas/PTG/include
 
 CXX_FLAGS = -std=gnu++17 -I/usr/local/include
 

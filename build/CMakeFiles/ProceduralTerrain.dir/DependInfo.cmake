@@ -12,7 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/deividas/PTG/libs/imgui/imgui_draw.cpp" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o.d"
   "/home/deividas/PTG/libs/imgui/imgui_tables.cpp" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o.d"
   "/home/deividas/PTG/libs/imgui/imgui_widgets.cpp" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o.d"
-  "/home/deividas/PTG/main.cpp" "CMakeFiles/ProceduralTerrain.dir/main.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/main.cpp.o.d"
+  "/home/deividas/PTG/src/cameramovement.cpp" "CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o.d"
+  "/home/deividas/PTG/src/main.cpp" "CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o" "gcc" "CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

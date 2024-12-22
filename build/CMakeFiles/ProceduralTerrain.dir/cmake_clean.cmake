@@ -7,8 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o.d"
   "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o.d"
-  "CMakeFiles/ProceduralTerrain.dir/main.cpp.o"
-  "CMakeFiles/ProceduralTerrain.dir/main.cpp.o.d"
+  "CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o"
+  "CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o.d"
+  "CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o"
+  "CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o.d"
   "ProceduralTerrain"
   "ProceduralTerrain.pdb"
 )

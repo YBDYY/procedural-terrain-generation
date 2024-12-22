@@ -225,29 +225,53 @@ libs/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.s
 .PHONY : libs/imgui/imgui_widgets.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/cameramovement.o: src/cameramovement.cpp.o
+.PHONY : src/cameramovement.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/cameramovement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o
+.PHONY : src/cameramovement.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/cameramovement.i: src/cameramovement.cpp.i
+.PHONY : src/cameramovement.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/cameramovement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.i
+.PHONY : src/cameramovement.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/cameramovement.s: src/cameramovement.cpp.s
+.PHONY : src/cameramovement.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/cameramovement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.s
+.PHONY : src/cameramovement.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProceduralTerrain.dir/build.make CMakeFiles/ProceduralTerrain.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -270,9 +294,12 @@ help:
 	@echo "... libs/imgui/imgui_widgets.o"
 	@echo "... libs/imgui/imgui_widgets.i"
 	@echo "... libs/imgui/imgui_widgets.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/cameramovement.o"
+	@echo "... src/cameramovement.i"
+	@echo "... src/cameramovement.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

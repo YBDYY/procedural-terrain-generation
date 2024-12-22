@@ -69,24 +69,38 @@ include CMakeFiles/ProceduralTerrain.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProceduralTerrain.dir/flags.make
 
-CMakeFiles/ProceduralTerrain.dir/main.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
-CMakeFiles/ProceduralTerrain.dir/main.cpp.o: /home/deividas/PTG/main.cpp
-CMakeFiles/ProceduralTerrain.dir/main.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProceduralTerrain.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/main.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/main.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/main.cpp.o -c /home/deividas/PTG/main.cpp
+CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
+CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o: /home/deividas/PTG/src/cameramovement.cpp
+CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o -c /home/deividas/PTG/src/cameramovement.cpp
 
-CMakeFiles/ProceduralTerrain.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProceduralTerrain.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deividas/PTG/main.cpp > CMakeFiles/ProceduralTerrain.dir/main.cpp.i
+CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deividas/PTG/src/cameramovement.cpp > CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.i
 
-CMakeFiles/ProceduralTerrain.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProceduralTerrain.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deividas/PTG/main.cpp -o CMakeFiles/ProceduralTerrain.dir/main.cpp.s
+CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deividas/PTG/src/cameramovement.cpp -o CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.s
+
+CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
+CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o: /home/deividas/PTG/src/main.cpp
+CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o -c /home/deividas/PTG/src/main.cpp
+
+CMakeFiles/ProceduralTerrain.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProceduralTerrain.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deividas/PTG/src/main.cpp > CMakeFiles/ProceduralTerrain.dir/src/main.cpp.i
+
+CMakeFiles/ProceduralTerrain.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProceduralTerrain.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deividas/PTG/src/main.cpp -o CMakeFiles/ProceduralTerrain.dir/src/main.cpp.s
 
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o: /home/deividas/PTG/libs/imgui/imgui.cpp
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o -c /home/deividas/PTG/libs/imgui/imgui.cpp
 
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o: /home/deividas/PTG/libs/imgui/imgui_draw.cpp
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o -c /home/deividas/PTG/libs/imgui/imgui_draw.cpp
 
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o: /home/deividas/PTG/libs/imgui/imgui_widgets.cpp
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o -c /home/deividas/PTG/libs/imgui/imgui_widgets.cpp
 
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o: CMakeFiles/ProceduralTerrain.dir/flags.make
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o: /home/deividas/PTG/libs/imgui/imgui_tables.cpp
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o: CMakeFiles/ProceduralTerrain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o -MF CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o.d -o CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.o -c /home/deividas/PTG/libs/imgui/imgui_tables.cpp
 
 CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.i: cmake_force
@@ -141,7 +155,8 @@ CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.s: cmake_force
 
 # Object files for target ProceduralTerrain
 ProceduralTerrain_OBJECTS = \
-"CMakeFiles/ProceduralTerrain.dir/main.cpp.o" \
+"CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o" \
+"CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o" \
 "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o" \
 "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o" \
@@ -150,7 +165,8 @@ ProceduralTerrain_OBJECTS = \
 # External object files for target ProceduralTerrain
 ProceduralTerrain_EXTERNAL_OBJECTS =
 
-ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/main.cpp.o
+ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/src/cameramovement.cpp.o
+ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/src/main.cpp.o
 ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui.cpp.o
 ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_draw.cpp.o
 ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_widgets.cpp.o
@@ -158,7 +174,7 @@ ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/libs/imgui/imgui_tables.cpp.
 ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/build.make
 ProceduralTerrain: /usr/local/lib/libraylib.a
 ProceduralTerrain: CMakeFiles/ProceduralTerrain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ProceduralTerrain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/deividas/PTG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ProceduralTerrain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProceduralTerrain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
