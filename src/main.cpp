@@ -106,6 +106,35 @@ void DrawUI(float noiseScale, float noiseFrequency, int noiseOctaves, Camera3D c
     DrawFPS(screenWidth - 100, 10);  // Display FPS in the top-right corner
 }
 
+float Clamp(float value, float min, float max) {
+    if (value < min) return min;
+    if (value > max) return max;
+    return value;
+}
+
+void MouseMovements(Camera3D& camera) {
+    // Get the current mouse position
+    Vector2 mousePosition = GetMousePosition();
+    SetMousePosition(screenWidth / 2, screenHeight / 2);  // Re-center the mouse every frame
+
+    // Calculate mouse delta (change in position)
+    Vector2 mouseDelta = {
+        mousePosition.x - screenWidth / 2,
+        mousePosition.y - screenHeight / 2
+    };
+
+    // Normalize mouse delta to avoid low sensitivity
+    float length = sqrt(mouseDelta.x * mouseDelta.x + mouseDelta.y * mouseDelta.y);
+    if (length > 0) {
+        mouseDelta.x /= length;
+        mouseDelta.y /= length;
+    }
+
+    // Apply mouse delta to camera
+    camera.target.x += mouseDelta.x * 3.0f;  // Adjust the sensitivity here
+    camera.target.y -= mouseDelta.y * 3.0f;
+}
+
 
 int main() {
     InitWindow(screenWidth, screenHeight, "Procedural Terrain Generation");
@@ -120,9 +149,13 @@ int main() {
 
     std::vector<float> heightMap = GenerateHeightMap(terrainWidth, terrainHeight);
 
+    SetMousePosition(screenWidth/2,screenHeight/2);
+    DisableCursor();
+
     SetTargetFPS(60);  // Set frame rate
 
     while (!WindowShouldClose()) {
+        
         // Update terrain parameters and regenerate height map if necessary
         if (UpdateParameters()) {
             heightMap = GenerateHeightMap(terrainWidth, terrainHeight);
