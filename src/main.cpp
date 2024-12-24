@@ -93,6 +93,8 @@ void DrawUI(float noiseScale, float noiseFrequency, int noiseOctaves, Camera3D c
     DrawText("Keys [3/4]: Decrease/Increase Noise Frequency", 10, 100, 20, DARKGRAY);
     DrawText("Keys [5/6]: Decrease/Increase Noise Octaves", 10, 130, 20, DARKGRAY);
 
+    DrawText("Space to fly up, Ctrl to fly down",10, 150, 20, DARKGRAY);
+
     DrawText(("Noise Scale: " + FormatFloat(noiseScale)).c_str(), 10, 170, 20, BLACK);
     DrawText(("Noise Frequency: " + FormatFloat(noiseFrequency)).c_str(), 10, 200, 20, BLACK);
     DrawText(("Noise Octaves: " + std::to_string(noiseOctaves)).c_str(), 10, 230, 20, BLACK);
@@ -155,7 +157,7 @@ int main() {
     SetTargetFPS(60);  // Set frame rate
 
     while (!WindowShouldClose()) {
-        
+    
         // Update terrain parameters and regenerate height map if necessary
         if (UpdateParameters()) {
             heightMap = GenerateHeightMap(terrainWidth, terrainHeight);
